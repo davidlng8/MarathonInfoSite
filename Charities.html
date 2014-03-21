@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <title>Annual City Marathon</title>
+    <link rel = "Stylesheet" type = "text/css" href=Charities.css />
+	<link href ="Styles/StyleSheet.css" rel = "Stylesheet" type ="text/css" />
+    <script type ="text/javascript" src = "Scripts/jquery-1.4.1.min.js"></script>
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function () {
+            $("#showcase").click(function () {
+                $("#list").slideDown("slow");
+            });
+            $("#list").mouseleave(function () {
+                $("#list").slideUp("slow");
+            });
+            $("#register").click(function () {
+                $("#shadow").fadeIn(2000);
+                $("#box").fadeIn(3000);
+            });
+            $("#formbtn1").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+            $("#formbtn").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 272px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id = "shadow">
+    </div>
+    <div id = "box">
+        <div id = "formDiv">
+            <h1 class = tbhead >Marathon Registration</h1>
+            <table> 
+                <tr>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td>First Name: </td>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Email:  </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Event Selection:  </td><td>
+                        <input type =radio name = "event" value = "5k Run" checked = true/>5K Run<br />
+                        <input type =radio name = "event" value = "10k Run"/>10K Run<br />
+                        <input type =radio name = "event" value = "Hairy Hagis Team Relay"/>Hairy Hagis Team Relay<br />
+                        <input type =radio name = "event" value = "Half Marathon"/>Half Marathon<br />
+                        <input type =radio name = "event" value = "Full Marathon"/>Full Marathon<br />
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        <a id = "formbtn1" class =topMenu href = "#" style = "margin-left:30%">Submit</a>&nbsp&nbsp<a id = "formbtn" class =topMenu href = "#">Cancel</a>
+    </div>
+    <img src = "Images/Health-care-shield-256.png" height="200px" width = "200px" style = "position:absolute; left:70%; top:2%; z-index:40" />
+    <div id = "topContent">
+        <table border = "0">
+            <tr>
+                <td valign ="top" class="style1" ><img width = "140px" height = "120px" src ="Images/Marathon_Runner.jpg" /></td>
+                <td colspan = "6" style = "width: 100%"><a class =name >23rd Annual City Marathon</a></td>
+            </tr>
+        </table>
+        <table cellpadding = "10px">
+            <tr style = "width:80%">
+                <td style = "width:27%"><a href =Default.html class = "topMenu">Marathon</a></td>
+                <td style = "width:20%"><a href =About.html class = "topMenu">About Us</a></td>
+                <td style = "width:18%"><a href = "Charities.html" class = "topMenu">Charities</a></td>
+                <td style = "width:18%"><a href = "Training.html" class = "topMenu">Training</a></td></tr>
+        </table>
+    </div>
+    <div id = "mainContent" >
+        <p>
+        <ul>
+            <li> <div style = "margin-left:18px"><img  src ="Images/gallery/acorns-logo.gif" /><div>
+                   <p>Established in 1988, Acorns Children's Hospice Trust is a registered charity offering a network of care for life limited and life threatened children and young people, and their families, across the heart of England. These children and young people are not expected to reach adulthood and require specialist care 24 hours a day, 7 days a week. Acorns is currently supporting around 640 children and nearly 900 families, including those who are bereaved.
+                    <a href="http://www.facebook.com/acornschildrenshospice" target="_blank"><img alt="" border="0" src ="Images/menu-facebook-link.png"></a>
+                   </p>
+            </li>
+            <li><div style = "margin-left:18px"><img src ="Images/CARE_logo.png" /></div>
+                   <p>
+                        The CARE foundation operates with the vision of seeking a world of hope, tolerance and social justice, where poverty has been overcome and people live in 
+                        dignity and security. CARE will be a global force and partner of choice within a worldwide movement dedicated to ending poverty. They will be known 
+                        everywhere for our unshakeable commitment to the dignity of people.<br/>
+
+                        CARE strives to serve individuals and families in the poorest communities in the world. Drawing strength from global 
+                        diversity, resources and experience, CARE promote innovative solutions and are advocates for global responsibility.
+                        <br />  <a href="https://www.facebook.com/carefans" target="_blank"><img alt="" border="0" src ="Images/menu-facebook-link.png"></a>
+                   </p>
+            </li>
+        </ul>
+    </p>
+    </div>
+    <div id = "leftContent">
+        <p style = "text-align:center"><asp:Label ID = "dateDisplay" runat = server></asp:Label></p>
+        <a class = button href = "#" id = "register">Athelete Registration</a><br />
+        <a class = button href = "photos.html">Photo Gallery</a><br />
+        <a id = "showcase"class = button href = "#">Related Items</a><br />
+        <div id = "list" style = "display:none">
+            <ul>
+                <li><a href = "health.html" class = "button">Health & Fitness Expo</a></li>
+                <li><a href = "advice.html" class = "button">Scientific Advice</a></li>
+            </ul>
+        </div><br/>
+        <img src ="Images/5star-02.jpg" height = "233px" width = "233px" />
+    </div>
+    <div id = "footer">
+        <img src ="Images/sponsors.jpg"/>
+    </div>
+    </form>
+</body>
+</html>

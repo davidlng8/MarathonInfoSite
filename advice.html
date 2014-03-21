@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <title>Annual City Marathon</title>
+    <link href ="Styles/StyleSheet.css" rel = "Stylesheet" type ="text/css" />
+    <script type ="text/javascript" src = "Scripts/jquery-1.4.1.min.js"></script>
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function () {
+            $("#showcase").click(function () {
+                $("#list").slideDown("slow");
+            });
+            $("#list").mouseleave(function () {
+                $("#list").slideUp("slow");
+            });
+            $("#register").click(function () {
+                $("#shadow").fadeIn(2000);
+                $("#box").fadeIn(3000);
+            });
+            $("#formbtn1").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+            $("#formbtn").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 272px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id = "shadow">
+    </div>
+    <div id = "box">
+        <div id = "formDiv">
+            <h1 class = tbhead >Marathon Registration</h1>
+            <table> 
+                <tr>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td>First Name: </td>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Email:  </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Event Selection:  </td><td>
+                        <input type =radio name = "event" value = "5k Run" checked = true/>5K Run<br />
+                        <input type =radio name = "event" value = "10k Run"/>10K Run<br />
+                        <input type =radio name = "event" value = "Hairy Hagis Team Relay"/>Hairy Hagis Team Relay<br />
+                        <input type =radio name = "event" value = "Half Marathon"/>Half Marathon<br />
+                        <input type =radio name = "event" value = "Full Marathon"/>Full Marathon<br />
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        <a id = "formbtn1" class =topMenu href = "#" style = "margin-left:30%">Submit</a>&nbsp&nbsp<a id = "formbtn" class =topMenu href = "#">Cancel</a>
+    </div>
+    <img src = "Images/Health-care-shield-256.png" height="200px" width = "200px" style = "position:absolute; left:70%; top:2%; z-index:40" />
+    <div id = "topContent">
+        <table border = "0">
+            <tr>
+                <td valign ="top" class="style1" ><img width = "140px" height = "120px" src ="Images/Marathon_Runner.jpg" /></td>
+                <td colspan = "6" style = "width: 100%"><a class =name >23rd Annual City Marathon</a></td>
+            </tr>
+        </table>
+        <table cellpadding = "10px">
+            <tr style = "width:80%">
+                <td style = "width:27%"><a href =Default.html class = "topMenu">Marathon</a></td>
+                <td style = "width:20%"><a href =About.html class = "topMenu">About Us</a></td>
+                <td style = "width:18%"><a href = "Charities.html" class = "topMenu">Charities</a></td>
+                <td style = "width:18%"><a href = "Training.html" class = "topMenu">Training</a></td></tr>
+        </table>
+    </div>
+    <div id = "mainContent" >
+        <div id="node-25407" class="node node-blog">
+<div class="content">
+    <p><img alt="marathon runner" width="250" height="175" vspace="2" hspace="2" align="right" 
+    src="http://cdn.sciencefocus.com/sites/default/files/250x175xrunner2.gif.pagespeed.ic.9hEXBoiwGF.png">
+<p>If you are taking part, or thinking of testing your endurance levels in the future, make a note of our top five 
+    scientific tips for running the race of your life.</p>
+<h2>1. Eat well</h2>
+<p>Running diverts blood from your digestive system, so eat your last meal at least two to three hours before the start of the race. 
+Maximise your energy levels during training by sticking to a 60% carbohydrate diet.</p>
+<h2>2. Stock up on electrolytes</h2>
+<p>Isotonic sports drinks contain 7-10% glucose and minerals such as sodium and potassium. Thirst is one of the last signs of dehydration 
+so don't just drink when you feel like it. Just a 1% decrease in hydration can cause a 5% decrease in performance.</p>
+<p><img width="250" height="175" alt="" src="http://cdn.sciencefocus.com/sites/default/files/250x175xcrowd2,281,29.gif.pagespeed.ic.-gt5bmijih.png"></p>
+<h2>3. Start slow</h2>
+<p>Nick Morgan, the lead sports scientist at Lucozade Sport has said: "I don't mean to scare anyone, but we also found that 85% of runners 
+last year set off at an unsustainable pace." So if you start to feel tired, your body is trying to tell you something.</p>
+<h2>4. Use SPF</h2>
+<p>It is a common misconception that the sun can't burn you on a partially cloudy day. Cover your face, shoulders, arms and chest in suncream with
+ at least factor 30 SPF to avoid the problem.</p>
+<h2><img width="250" height="175" vspace="2" hspace="2" align="right" alt="" src="http://cdn.sciencefocus.com/sites/default/files/250x175xpills2.gif.pagespeed.ic.g_YMkeFwCH.png">
+5. Don't take pills</h2>
+<p>A marathon takes 40,000 steps and so your legs sustain multiple micro tears. Yet medical experts have warned against taking ibuprofen before a 
+race because it can affect blood flow to and from the kidneys. If you do plan on using painkillers, test them out safely on a longer practise run first.</p>
+<p><b><br>
+By Sarah Jordan&nbsp;</b></p>
+<h4>Find out more</h4>
+<ul>
+<li>Does running to music make you run faster?</li>
+<li>If you run east, are you running faster than if you run west?</li>
+</ul>
+</div>
+    </div>
+    <div id = "leftContent">
+        <p style = "text-align:center"><asp:Label ID = "dateDisplay" runat = server></asp:Label></p>
+        <a class = button href = "#" id = "register">Athelete Registration</a><br />
+        <a class = button href = "photos.html">Photo Gallery</a><br />
+        <a id = "showcase"class = button href = "#">Related Items</a><br />
+        <div id = "list" style = "display:none">
+            <ul>
+                <li><a href = "health.html" class = "button">Health & Fitness Expo</a></li>
+                <li><a href = "advice.html" class = "button">Scientific Advice</a></li>
+            </ul>
+        </div><br/>
+        <img src ="Images/5star-02.jpg" height = "233px" width = "233px" />
+    </div>
+    <div id = "footer">
+        <img src ="Images/sponsors.jpg"/>
+    </div>
+    </form>
+</body>
+</html>

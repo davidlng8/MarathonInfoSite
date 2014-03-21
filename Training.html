@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <title>Annual City Marathon</title>
+    <link href ="Styles/StyleSheet.css" rel = "Stylesheet" type ="text/css" />
+    <script type ="text/javascript" src = "Scripts/jquery-1.4.1.min.js"></script>
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function () {
+            $("#showcase").click(function () {
+                $("#list").slideDown("slow");
+            });
+            $("#list").mouseleave(function () {
+                $("#list").slideUp("slow");
+            });
+            $("#register").click(function () {
+                $("#shadow").fadeIn(2000);
+                $("#box").fadeIn(3000);
+            });
+            $("#formbtn1").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+            $("#formbtn").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 272px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id = "shadow">
+    </div>
+    <div id = "box">
+        <div id = "formDiv">
+            <h1 class = tbhead >Marathon Registration</h1>
+            <table> 
+                <tr>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td>First Name: </td>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Email:  </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Event Selection:  </td><td>
+                        <input type =radio name = "event" value = "5k Run" checked = true/>5K Run<br />
+                        <input type =radio name = "event" value = "10k Run"/>10K Run<br />
+                        <input type =radio name = "event" value = "Hairy Hagis Team Relay"/>Hairy Hagis Team Relay<br />
+                        <input type =radio name = "event" value = "Half Marathon"/>Half Marathon<br />
+                        <input type =radio name = "event" value = "Full Marathon"/>Full Marathon<br />
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        <a id = "formbtn1" class =topMenu href = "#" style = "margin-left:30%">Submit</a>&nbsp&nbsp<a id = "formbtn" class =topMenu href = "#">Cancel</a>
+    </div>
+    <img src = "Images/Health-care-shield-256.png" height="200px" width = "200px" style = "position:absolute; left:70%; top:2%; z-index:40" />
+    <div id = "topContent">
+        <table border = "0">
+            <tr>
+                <td valign ="top" class="style1" ><img width = "140px" height = "120px" src ="Images/Marathon_Runner.jpg" /></td>
+                <td colspan = "6" style = "width: 100%"><a class =name >23rd Annual City Marathon</a></td>
+            </tr>
+        </table>
+        <table cellpadding = "10px">
+            <tr style = "width:80%">
+                <td style = "width:27%"><a href =Default.html class = "topMenu">Marathon</a></td>
+                <td style = "width:20%"><a href =About.html class = "topMenu">About Us</a></td>
+                <td style = "width:18%"><a href = "Charities.html" class = "topMenu">Charities</a></td>
+                <td style = "width:18%"><a href = "Training.html" class = "topMenu">Training</a></td></tr>
+        </table>
+    </div>
+    <div id = "mainContent" >
+        <h3 id = "sec1">8 Week Training Schedule</h3>
+    <h4>If you have not run for a long time, or would benefit from some extra training before starting your marathon training programme the below 8 week pre-training schedule will really help.</h4>
+    <div id = "schedule">
+        <table style="width: 500px; border: 1px solid #002395;" border="1" cellspacing="2" cellpadding="2">
+            <tbody>
+            <tr style="background-color: #002395;">
+            <td>&nbsp;</td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Mon</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>&nbsp;Tue</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Wed</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Thurs</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Fri</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Sat</strong></span></td>
+            <td style="text-align: center;"><span style="color: #ffffff;"><strong>Sun</strong></span></td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 1</strong></td>
+            <td style="text-align: center;">Walk/Jog 20mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 40mins</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 2</strong></td>
+            <td style="text-align: center;">Jog 15mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 40mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 25mins</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 3</strong></td>
+            <td style="text-align: center;">Walk/Jog 50mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Walk/Jog 60mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">20mins Fast</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 4</strong></td>
+            <td style="text-align: center;">Walk/Jog 60mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Run 25mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 40mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 50mins</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 5</strong></td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 45mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Easy 20mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Run 3km fast</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 6</strong></td>
+            <td style="text-align: center;">Easy 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 60 mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Run 45mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Jog 60mins</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 7</strong></td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">40 mins fast</td>
+            <td style="text-align: center;">30 mins easy</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">45mins easy</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Run 45mins</td>
+            </tr>
+            <tr>
+            <td style="text-align: center;"><strong>Week 8</strong></td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">run 45 mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Run 30mins</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">Rest</td>
+            <td style="text-align: center;">5k Race</td>
+            </tr>
+         </tbody>
+        </table>
+
+    </div>
+
+    </div>
+    <div id = "leftContent">
+        <p style = "text-align:center"><asp:Label ID = "dateDisplay" runat = server></asp:Label></p>
+        <a class = button href = "#" id = "register">Athelete Registration</a><br />
+        <a class = button href = "photos.html">Photo Gallery</a><br />
+        <a id = "showcase"class = button href = "#">Related Items</a><br />
+        <div id = "list" style = "display:none">
+            <ul>
+                <li><a href = "health.html" class = "button">Health & Fitness Expo</a></li>
+                <li><a href = "advice.html" class = "button">Scientific Advice</a></li>
+            </ul>
+        </div><br/>
+        <img src ="Images/5star-02.jpg" height = "233px" width = "233px" />
+    </div>
+    <div id = "footer">
+        <img src ="Images/sponsors.jpg"/>
+    </div>
+    </form>
+</body>
+</html>

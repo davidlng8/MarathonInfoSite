@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <title>Annual City Marathon</title>
+    <link href ="Styles/StyleSheet.css" rel = "Stylesheet" type ="text/css" />
+    <script type ="text/javascript" src = "Scripts/jquery-1.4.1.min.js"></script>
+    <script type = "text/javascript" language = "javascript">
+        $(document).ready(function () {
+            $("#showcase").click(function () {
+                $("#list").slideDown("slow");
+            });
+            $("#list").mouseleave(function () {
+                $("#list").slideUp("slow");
+            });
+            $("#register").click(function () {
+                $("#shadow").fadeIn(2000);
+                $("#box").fadeIn(3000);
+            });
+            $("#formbtn1").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+            $("#formbtn").click(function () {
+                $("#shadow").fadeOut(1000);
+                $("#box").fadeOut(1000);
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 272px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id = "shadow">
+    </div>
+    <div id = "box">
+        <div id = "formDiv">
+            <h1 class = tbhead >Marathon Registration</h1>
+            <table> 
+                <tr>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td>First Name: </td>
+                    <td rowspan = "5" width = "20px">&nbsp</td>
+                    <td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Email:  </td><td><input type = "text" /></td>
+                </tr>
+                <tr>
+                    <td>Event Selection:  </td><td>
+                        <input type =radio name = "event" value = "5k Run" checked = true/>5K Run<br />
+                        <input type =radio name = "event" value = "10k Run"/>10K Run<br />
+                        <input type =radio name = "event" value = "Hairy Hagis Team Relay"/>Hairy Hagis Team Relay<br />
+                        <input type =radio name = "event" value = "Half Marathon"/>Half Marathon<br />
+                        <input type =radio name = "event" value = "Full Marathon"/>Full Marathon<br />
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </div>
+        <a id = "formbtn1" class =topMenu href = "#" style = "margin-left:30%">Submit</a>&nbsp&nbsp<a id = "formbtn" class =topMenu href = "#">Cancel</a>
+    </div>
+    <img src = "Images/Health-care-shield-256.png" height="200px" width = "200px" style = "position:absolute; left:70%; top:2%; z-index:40" />
+    <div id = "topContent">
+        <table border = "0">
+            <tr>
+                <td valign ="top" class="style1" ><img width = "140px" height = "120px" src ="Images/Marathon_Runner.jpg" /></td>
+                <td colspan = "6" style = "width: 100%"><a class =name >23rd Annual City Marathon</a></td>
+            </tr>
+        </table>
+        <table cellpadding = "10px">
+            <tr style = "width:80%">
+                <td style = "width:27%"><a href =Default.html class = "topMenu">Marathon</a></td>
+                <td style = "width:20%"><a href =About.html class = "topMenu">About Us</a></td>
+                <td style = "width:18%"><a href = "Charities.html" class = "topMenu">Charities</a></td>
+                <td style = "width:18%"><a href = "Training.html" class = "topMenu">Training</a></td></tr>
+        </table>
+    </div>
+    <div id = "mainContent" >
+        <br />
+    <p>
+        <table>
+            <tr>
+                <td>
+                    The race itself is only half the fun. Featuring interactive exhibits, live entertainment, the Official ASICS LA Marathon Merchandise Store, 
+                    product trials and all things marathon, the Health & Fitness Expo is one of the highlights of race weekend.<br /><br /> The Health & Fitness Expo annually hosts 
+                    over 150 exhibitors featuring the brand-new designs in running gear and shoes, as well as the latest developments in sports, fitness, and nutrition.
+                </td>
+                <td>
+                    <img src ="Images/race.jpg" height = "186px" width = "315px"/>
+                </td>
+            </tr>
+            <tr><td colspan = "2">In addition, the Expo is the home of Participant 
+                Packet Pick-Up for all marathon runners. The two-day Health & Fitness Expo is free and open to the public.</td></tr>
+        </table>
+         
+    </p>
+    <p>
+        <h3>HEALTH & FITNESS EXPO HOURS:</h3>
+        <ul>
+            <li>Friday, March 7: 10AM – 7PM</li>
+            <li>Saturday, March 8: 9AM – 5PM</li>
+        </ul>
+    </p>
+    <p>
+        <table>
+            <tr><td><h3>LOCATION:</h3></td></tr>
+            <tr><td valign = "top">
+                    Sestiere Santa Croce, 495/B<br />
+                    30135 Venice, Province of Venice, Italy
+               </td></tr>
+            <tr><td><img src="Images/maps.png" /></td>
+                
+            </tr>
+        </table>
+        
+    </p>
+
+    </div>
+    <div id = "leftContent">
+        <p style = "text-align:center"><asp:Label ID = "dateDisplay" runat = server></asp:Label></p>
+        <a class = button href = "#" id = "register">Athelete Registration</a><br />
+        <a class = button href = "photos.html">Photo Gallery</a><br />
+        <a id = "showcase"class = button href = "#">Related Items</a><br />
+        <div id = "list" style = "display:none">
+            <ul>
+                <li><a href = "health.html" class = "button">Health & Fitness Expo</a></li>
+                <li><a href = "advice.html" class = "button">Scientific Advice</a></li>
+            </ul>
+        </div><br/>
+        <img src ="Images/5star-02.jpg" height = "233px" width = "233px" />
+    </div>
+    <div id = "footer">
+        <img src ="Images/sponsors.jpg"/>
+    </div>
+    </form>
+</body>
+</html>
